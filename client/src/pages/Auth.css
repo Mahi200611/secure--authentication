@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+/* LEFT SIDE */
+
+.auth-left {
+  width: 50%;
+  min-height: 100vh;
+  padding: 45px 65px;
+  background: linear-gradient(135deg, #111827, #1e3a8a, #2563eb);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-left::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  top: -120px;
+  right: -100px;
+}
+
+.auth-left::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  bottom: -100px;
+  left: -80px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-content {
+  margin: auto 0;
+  max-width: 520px;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.welcome-content > p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dbeafe;
+  max-width: 450px;
+}
+
+.features {
+  margin-top: 35px;
+}
+
+.features p {
+  font-size: 16px;
+  margin: 18px 0;
+  color: #eff6ff;
+}
+
+/* RIGHT SIDE */
+
+.auth-right {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #f8fafc;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 42px;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e5e7eb;
+}
+
+.form-container h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #111827;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.form-container > label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s;
+  background: #fff;
+  color: #111827;
+}
+
+.form-container input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0 25px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.remember input {
+  width: 15px;
+  height: 15px;
+}
+
+.forgot {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-container button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.form-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.3);
+}
+
+.form-container button:active {
+  transform: translateY(0);
+}
+
+.switch-page {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.switch-page span {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-page span:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    width: 100%;
+    min-height: 300px;
+    padding: 30px;
+  }
+
+  .welcome-content {
+    margin-top: 50px;
+  }
+
+  .welcome-content h1 {
+    font-size: 38px;
+  }
+
+  .welcome-content > p {
+    font-size: 15px;
+  }
+
+  .features {
+    display: none;
+  }
+
+  .auth-right {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .form-container {
+    padding: 30px 25px;
+  }
+}
