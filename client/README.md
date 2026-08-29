@@ -1,16 +1,116 @@
-# React + Vite
+🔐 Secure Authentication System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure and user-friendly authentication web application that allows users to register, log in, and access protected resources using token-based authentication.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 👤 User registration
+- 🔑 Secure user login
+- 🔒 Password hashing
+- 🎟️ JWT-based authentication
+- 🛡️ Protected routes
+- 🚪 Logout functionality
+- 📱 Responsive user interface
+- 🗄️ MongoDB database integration
 
-## React Compiler
+🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend
 
-## Expanding the ESLint configuration
+- HTML
+- CSS
+- JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend
+
+- Node.js
+- Express.js
+
+Database
+
+- MongoDB
+
+Authentication
+
+- JWT
+- bcrypt
+
+Tools
+
+- Git
+- GitHub
+- VS Code
+
+📁 Project Structure
+
+Secure-Authentication/
+│
+├── client/
+│   ├── ...
+│
+├── server/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
+🚀 Getting Started
+
+1. Clone the repository
+
+git clone https://github.com/Mahi200611/secure--authentication.git
+
+2. Open the project
+
+cd secure--authentication
+
+3. Install dependencies
+
+npm install
+
+4. Configure environment variables
+
+Create a ".env" file in the server directory and add the required configuration, such as your MongoDB connection string and JWT secret.
+
+Never upload your ".env" file or real secrets to GitHub.
+
+5. Start the application
+
+Use the start command configured in your "package.json".
+
+🔐 Security
+
+This project demonstrates common authentication practices including:
+
+- Password hashing with bcrypt
+- JWT-based authentication
+- Protected API routes
+- Environment variables for sensitive configuration
+
+«This project is intended for learning and demonstration purposes.»
+
+📸 Screenshots
+
+Screenshots of the application can be added here.
+
+🎯 Future Improvements
+
+- Password reset functionality
+- Email verification
+- Role-based access control
+- Refresh-token authentication
+- Improved dashboard
+- Form validation and error handling
+
+👩‍💻 Author
+
+Mahi Kumari
+
+Computer Science Engineering Student
+
+GitHub: "Mahi200611" (https://github.com/Mahi200611)
